@@ -15,5 +15,6 @@ Responsavel por:
 Responsável por: 
 - Consumir a mensagem do rabbitMQ
 - Criar um objeto que será utilizado no envio de email
-- Enviar o email para o usuário cadastrado.
+- Enviar um email para o usuário cadastrado.
+- Salvar o email enviado na base de dados.
 
