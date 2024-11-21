@@ -25,7 +25,7 @@ public class UserProducer {
        var emailDto = new EmailDto();
        emailDto.setUserId(userModel.getUserId());
        emailDto.setEmailTo(userModel.getEmail());
-       emailDto.setSubject("Cadastro realizado com sucesso!");
+       emailDto.setSubject("[API RabbitMQ] - Cadastro realizado com sucesso!");
        emailDto.setText(userModel.getName() + ", Parabéns por ter ser registrado!");
 
        rabbitTemplate.convertAndSend("", routingKey, emailDto);

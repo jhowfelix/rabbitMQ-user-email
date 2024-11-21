@@ -31,7 +31,7 @@ public class EmailService {
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
 
-
+        simpleMailMessage.setSubject(emailModel.getSubject());
         simpleMailMessage.setFrom(emailFrom);
         simpleMailMessage.setTo(emailModel.getEmailTo());
         simpleMailMessage.setText(emailModel.getText());
